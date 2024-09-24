@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<!-- daisy Ui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- taiwind css -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            btn:'#B4F461',
+            nav:'#f9f7f3'
+          },
+          fontFamily: {
+            Lexend:['Lexend'],
+            
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <div class="w-full bg-nav">
+            <section class=" w-11/12 mx-auto py-5  pb-10">
+              <div class="navbar ">
+                  <div class="navbar-start">
+                      <a href="./index.html" class="btn bg-btn font-bold px-10">Home</a>
+                  </div>
+                  <div class="navbar-center hidden lg:flex gap-3">
+                     <img src="./assets/logo.png" alt="" class="w-2/12">
+                     <h2 class=" font-bold text-xl">Donate Bangladesh</h2>
+                  </div>
+                  <div class="navbar-end flex gap-3">
+                      <img src="./assets/coin.png" alt="" class="">
+                      <p class="text-[#111111B3] text-xl font-semibold"><span id="total-amount">5500</span>BDT</p>
+                  </div>
+                </div>
+             </section>
+          </div>
+    </header>
+    <main class="font-Lexend ">
+        <h1 class="font-extrabold text-3xl lg:text-4xl my-5 p-10">Important FAQ</h1>
+
+        <div class="join join-vertical w-full ">
+            <div class="collapse collapse-arrow join-item border-base-300 border p-8 shadow-md">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is Document Object Model(DOM)?</div>
+              <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface that allows developers to manipulate the structure, style, and content of a web page. It's a fundamental concept in web development that's essential for creating interactive and dynamic web pages</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border p-8 shadow-md">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>In the context of the DOM (Document Object Model), event delegation is a technique where you attach a single event listener to a parent element, instead of attaching listeners to each child element, allowing you to handle events that occur on any of its descendants by leveraging the "event bubbling" mechanism; this is particularly useful when dealing with large lists of dynamically added elements, as it improves performance by minimizing the number of event listeners needed and simplifies code maintenance</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border p-8 shadow-md">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>To manipulate an element's attributes and styles using the DOM in JavaScript, you can access the element using methods like getElementById, getElementsByClassName, or querySelector, then use the setAttribute method to change attributes and the style property to modify CSS styles directly on the element</p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+   
+</body>
+</html>
