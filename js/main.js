@@ -59,9 +59,7 @@ document.getElementById('Donation').addEventListener('click',function(event){
 
 })
 
-document.getElementById('blog').addEventListener('click',function(){
-    window.location.href='../blog.html'
-})
+
 
 
 
