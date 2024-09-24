@@ -31,9 +31,9 @@
 
             const history=section.querySelector('h3').innerText;
             const time=new Date();
-            document.getElementById('history-list').innerHTML+=`<li class="border rounded-2xl p-10 lg:my-5 my-3 shadow-sm">
+            document.getElementById('history-list').innerHTML+=`<li class="border rounded-2xl p-10 lg:my-5 my-3 shadow-sm font-bold text-xl">
             ${donateValue} Taka is ${history}
-            <p class="font-semibold ">${time}</p>
+            <p class="font-normal text-light">${time}</p>
           </li>`
 
           document.getElementById('my_modal_1').showModal()
